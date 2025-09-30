@@ -20,6 +20,6 @@ class SaveStudentUseCaseTest {
         saveStudentUseCase(student)
 
         // Then
-        verify(exactly = 1) { studentRepositoryMock.save(student) }
+        verify(exactly = 1) { studentRepositoryMock.saveStudent(student) }
     }
 }

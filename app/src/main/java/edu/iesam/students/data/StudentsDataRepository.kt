@@ -12,7 +12,7 @@ class StudentsDataRepository(
     private val apiRemoteDataSource: StudentApiRemoteDataSource
 ) : StudentRepository {
 
-    override fun save(student: Student) {
+    override fun saveStudent(student: Student) {
         memLocalDataSource.save(student)
     }
 
